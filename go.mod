@@ -1,0 +1,41 @@
+module cc_DavidGayle_BackendAPI
+
+go 1.18
+
+require (
+	github.com/felixge/httpsnoop v1.0.1
+	github.com/fsnotify/fsnotify v1.5.4
+	github.com/golang-jwt/jwt v3.2.2+incompatible
+	github.com/gorilla/handlers v1.5.1
+	github.com/gorilla/mux v1.8.0
+	github.com/hashicorp/hcl v1.0.0
+	github.com/jackc/chunkreader/v2 v2.0.1
+	github.com/jackc/pgconn v1.13.0
+	github.com/jackc/pgio v1.0.0
+	github.com/jackc/pgpassfile v1.0.0
+	github.com/jackc/pgproto3/v2 v2.3.1
+	github.com/jackc/pgservicefile v0.0.0-20200714003250-2b9c44734f2b
+	github.com/jackc/pgtype v1.12.0
+	github.com/jackc/pgx/v4 v4.17.2
+	github.com/jinzhu/gorm v1.9.16
+	github.com/jinzhu/inflection v1.0.0
+	github.com/jinzhu/now v1.1.4
+	github.com/magiconair/properties v1.8.6
+	github.com/mitchellh/mapstructure v1.5.0
+	github.com/pelletier/go-toml v1.9.5
+	github.com/pelletier/go-toml/v2 v2.0.5
+	github.com/spf13/afero v1.8.2
+	github.com/spf13/cast v1.5.0
+	github.com/spf13/jwalterweatherman v1.1.0
+	github.com/spf13/pflag v1.0.5
+	github.com/spf13/viper v1.13.0
+	github.com/subosito/gotenv v1.4.1
+	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
+	golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a
+	golang.org/x/text v0.3.7
+	gopkg.in/ini.v1 v1.67.0
+	gopkg.in/yaml.v2 v2.4.0
+	gopkg.in/yaml.v3 v3.0.1
+	gorm.io/driver/postgres v1.3.10
+	gorm.io/gorm v1.23.10
+)
