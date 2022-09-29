@@ -1,0 +1,10 @@
+{
+  "db": {
+    "type": "postgres",
+    "host": "localhost",
+    "port": 9001,
+    "name": "tnp_config",
+    "user": "postgres",
+    "password": "mysecretpassword"
+  }
+}

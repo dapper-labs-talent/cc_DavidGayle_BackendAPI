@@ -1,0 +1,37 @@
+version: "3"
+
+env:
+  ENV: Local
+
+tasks:
+  mod:
+    cmds:
+      - go mod tidy
+      - go mod vendor
+
+  deps:
+    cmds:
+      - go mod download
+
+  fmt:
+    cmds:
+      - gofmt -l -s -w $(find . -name '*.go')
+
+  build:
+    desc: "Create go binary"
+    cmds:
+      - go build -o ./build/out/backend-svc cmd/main.go
+    sources:
+      - ./internal/app/**/*.go
+      - ./internal/app/*.go
+      - ./cmd
+    generates:
+      - ./build/out/backend-svc
+    vars:
+      APP_VERSION: 0.0.1
+    silent: false
+
+  clean:
+    desc: "Clear binaries"
+    cmds:
+      - rm -rf ./build/out
